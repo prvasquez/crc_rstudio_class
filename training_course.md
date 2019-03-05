@@ -5,8 +5,6 @@ By the end of this course you will hopefully...
 * Become more familiar with the programming language R
 * Be able to wirte and run simple code in Rstudio
 
-[TOC]
-
 ## Rstudio vs R
 Rstudio is a **GUI** (Graphical User Interface). This software allow the us to easily visualize the information we are working with.
 
@@ -48,3 +46,12 @@ You should notice one thing right away, in the top left box you should see a new
 
 Now go ahead and plug `x` into the console. What do you think it will return?
 
+### Basic Operationals
+In addition (*pun intended*), you can do basic mathmatical operations in Rstudio such as addition, subtraction, multiplication, and division. Let's start with some easy math. Go ahead and see if you can guess what Rstudio will output for these codes.
+* `1+1`
+* `2 - 7`
+* `84 / 12`
+* `2 ** 3`
+* `2 ^ 3`
+* `4 + 7 * 3 ^ 2` *Hint: Order of operations still applies*
+* `x + x`
