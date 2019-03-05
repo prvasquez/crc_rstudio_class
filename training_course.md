@@ -5,6 +5,8 @@ By the end of this course you will hopefully...
 * Become more familiar with the programming language R
 * Be able to wirte and run simple code in Rstudio
 
+[TOC]
+
 ## Rstudio vs R
 Rstudio is a **GUI** (Graphical User Interface). This software allow the us to easily visualize the information we are working with.
 
