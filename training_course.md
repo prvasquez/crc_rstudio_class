@@ -38,7 +38,7 @@ From the previous section you'll notice that typing in certain values and charac
 R can recognize numbers, data tables, matrix, and strings/characters. `4` is a number so it worked. `"Hello"` is a string (because it has the quotes surrounding it) so it worked. But `hello` by itself is a variable.
 
 ### Variables
-Variables are extremely useful because they allow us to store information for later use. Variables can be anything from a number, a string, a matrix, a datatable, etc.
+Variables are extremely useful because they allow us to store information for later use. Variables can be anything from a number, a string, a matrix, a datatable, etc. Variables are powerful because they will stay in the global environment as long as you keep Rstudio open. Variables also can be overwritten.
 
 Let's store our first variable! Go ahead and plug this command in the console.
 `x <- 5`
@@ -56,3 +56,13 @@ In addition (*pun intended*), you can do basic mathmatical operations in Rstudio
 * `2 ^ 3`
 * `4 + 7 * 3 ^ 2` *Hint: Order of operations still applies*
 * `x + x`
+* `x + y`
+
+These operationals can also be used to make new variables. For example, if I wanted the sum of two things to be a new variable `z` I could run this.
+
+`z <- 4 + 3`
+
+Now lets say you want the sum of `z` and `x` to be `y`. Write a line of code that will create a new variable `y` that is the sum of `x` and `z`.
+
+### Basic Functions
+Functions are the backbone of using Rstudio efficiently. A function is a command that calls upon a already saved set of code that is stored by either Rstudio's base package or a new package that you installed. This will reduce the total amount of code that you would need to write and run. For example, in the last section if we wanted to sum together 1, 2, and `x`, we could input `1 + 2 + x`. However, if we wanted to be fancy and use the `sum()` function, it would look like this `sum(1,2,x)`. Go ahead and try that now. 
