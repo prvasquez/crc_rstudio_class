@@ -66,3 +66,11 @@ Now lets say you want the sum of `z` and `x` to be `y`. Write a line of code tha
 
 ### Basic Functions
 Functions are the backbone of using Rstudio efficiently. A function is a command that calls upon a already saved set of code that is stored by either Rstudio's base package or a new package that you installed. This will reduce the total amount of code that you would need to write and run. For example, in the last section if we wanted to sum together 1, 2, and `x`, we could input `1 + 2 + x`. However, if we wanted to be fancy and use the `sum()` function, it would look like this `sum(1,2,x)`. Go ahead and try that now. 
+
+Some other functions you may want to play around with
+* `sqrt(49)`
+* `abs(-7)`
+* `log10(x)`
+
+### Creating Functions
+Let's say you want to go to Europe this summer, however, Europe measures their temperature in Celcius and we measure our temperature in Farenheit
