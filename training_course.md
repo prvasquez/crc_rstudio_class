@@ -73,4 +73,33 @@ Some other functions you may want to play around with
 * `log10(x)`
 
 ### Creating Functions
-Let's say you want to go to Europe this summer, however, Europe measures their temperature in Celcius and we measure our temperature in Farenheit
+Let's say you want to go to Europe this summer, however, Europe measures their temperature in Celcius and we measure our temperature in Fahrenheit. There is a conversion to get from fahrenheit to celsius the equation is `(F - 32)\*(5/9) = C`. So if we started at a nice 70 degree fahrenheit and wanted to get to celsius we could use our console and go
+* `(70 - 32) * (5/9)`
+But that's a lot of typing to find a simple conversion. So instead of having to manually type out the formula every time, we can create a function similar to `sum()` or `sqrt()` to do this quickly.
+
+To make a function we have to first start out by naming it. Lets name out function `FtoC` (Fahrenheit to celcius). Similar to how we declared variables we can declare functions.
+```
+FtoC <- function(argument) {
+statements
+return(object)
+}
+```
+Now we can use the `function()` function (hehe). A function contains 3 parts
+1. Arguments - what is inputted, so in out example it would be the temperature in fahrenheit (`f`)
+2. Statements - what happens to the arugments, in our example it would be the equation (`C = (f - 32) * (5 / 9)`)
+3. A return/output - what the funtion returns, in our example it would be the temperature in celcius (`c`)
+ Lets add these to our code
+```
+FtoC <- function(f) {
+c = (f - 32) * (5 / 9)
+return(c)
+}
+```
+Now to save this function to our global environment, we will have to run the whole command into the console. After that, you should see the `FtoC` function in your global environment box in the top left.
+
+Now we can finally run that function! Go ahead and choose your favorite temperature in fahrenheit and plug it into the function. My favorite temperature is a cool 75 degrees celcius so I will run `FtoC(75)`.
+
+Great job! You just wrote a function to change temperature from fahrenheit to celcius and tested it out and it (hopefully) worked!
+
+Now go ahead and **write a new function** that accepts an argument of temperature in **Celcius** and **outputs fahrenheit**.
+
