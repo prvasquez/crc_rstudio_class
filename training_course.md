@@ -103,3 +103,7 @@ Great job! You just wrote a function to change temperature from fahrenheit to ce
 
 Now go ahead and **write a new function** that accepts an argument of temperature in **Celcius** and **outputs fahrenheit**.
 
+## Working with data
+Today, one of the biggest challenges that researchers, companies, and other organizations face is the sheer amount of data available to them. Rstudio allows us to take large amounts of data and visualize it. For this next section, we will be working with a sample data set I created.
+
+
