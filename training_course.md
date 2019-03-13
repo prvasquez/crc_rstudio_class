@@ -112,4 +112,4 @@ The  data set is located in this github repository under the name `sample_data.c
 
 ![alt text](https://github.com/prvasquez/crc_rstudio_class/blob/master/downloadzip.png)
 
-
+After downloading the file, we will have to decompress it and move the `sample_data.csv` file to our computer.
