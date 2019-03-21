@@ -114,4 +114,6 @@ The  data set is located in this github repository under the name `sample_data.c
 
 After downloading the file, we will have to decompress it and move the `sample_data.csv` file to our computer. Go ahead and move the download to your Desktop. Next, unzip the folder and drag the `sample_data.csv` file to your desktop.
 
-Once the file is on your desktop, you will have to change the working directory on the Rstudio software. To do this, click on session -> Set working directory -> Choose directory. When choosing the directory, go to the Desktop directory and open it. You should see this command come up in your console `setwd("C:/Users/itlm094/Desktop")` as well as the `sample_data.csv` appear in the files square at the bottom right of the rstudio window.
+Once the file is on your desktop, you will have to change the working directory on the Rstudio software. To do this, click on session -> Set working directory -> Choose directory. When choosing the directory, go to the Desktop directory and open it.
+
+You should see this command come up in your console `setwd("C:/Users/itlm094/Desktop")` as well as the `sample_data.csv` appear in the files square at the bottom right of the rstudio window.
