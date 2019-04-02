@@ -117,3 +117,22 @@ After downloading the file, we will have to decompress it and move the `sample_d
 Once the file is on your desktop, you will have to change the working directory on the Rstudio software. To do this, click on session -> Set working directory -> Choose directory. When choosing the directory, go to the Desktop directory and open it.
 
 You should see this command come up in your console `setwd("C:/Users/itlm094/Desktop")` as well as the `sample_data.csv` appear in the files square at the bottom right of the rstudio window.
+
+### Opening Data files
+Now that `sample_data.csv` is in our working directory, we will need a way to access the data inside it. One way to do this is by simply clicking the file and then clicking `view file`.
+
+When you do this, a new box will open in the top left corner that looks like this.
+```
+Day,Temperature
+Monday,30
+Tuesday,32
+Wednesday,28
+Thursday,25
+Friday,31
+Saturday,332
+```
+A few things to notice about this file.
+* **The Header** - The first line of a file is usually called a header (although not all files will have headers). This line will be important later when we start using our data.
+* **The Commas** - You may have noticed the `.csv` extension at the end of our file. That stands for `Comma Separated Values`. Different types of files need to be imported into Rstudio in different ways. Another similar file type you may see is `.tsv`, which stands for `Tab Separated Values`. As you can imagine, instead of commas the values have a tab space between them.
+* **Saturday is HOT!** - It seems like Saturday will be a really hot day at 332 degree celcius! Keep this in mind for later and we can fix it with our newly learned R skills!
+
