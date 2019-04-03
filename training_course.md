@@ -137,6 +137,18 @@ A few things to notice about this file.
 * **Saturday is HOT!** - It seems like Saturday will be a really hot day at 332 degree celcius! Keep this in mind for later and we can fix it with our newly learned R skills!
 
 ### Opening Data files and storing them in Rstudio
-When we opened the `.csv` file all we saw was how the text inside the file. But what if we wanted to ask Rstudio what the temperature was on Wednesday? There is no command that would work on the `.csv` file, so instead we will first have to import the csv file as a table into our Rstudio enviornment.
+When we opened the `.csv` file all we saw was how the text inside the file. But what if we wanted to ask Rstudio what the temperature was on Wednesday? There is no command that would work on the `.csv` file, so instead we will first have to import the csv file as a table into our Rstudio enviornment. There are two ways to do this.
 
+1. Manually import the data by going `File` -> `Import Dataset` -> `From Text (Base)...` then select the `sample_data.csv` file and click open then import! 
+2. In your console, you can use the `read.csv()` function. Let's run through this function's variables so we know what were doing.
+```
+read.csv(file, header = TRUE, sep = ",")
+```
+* `File` The file you want to read from.
+* `header = TRUE` If you file has a header, then you can leave this variable as `TRUE`, however, if the file does not have a header then switch to `FALSE`
+* `sep = ","` What to look for to separate the data. If you remember from when we viewed the text file, our data was separated by commas! (Also `.csv` stands for **Comma** separated values). If, however, our data was in the **tab** separated values. We would put `sep = \t`.
+
+
+
+Now your data is saved as a dataframe in Rstudio
 
