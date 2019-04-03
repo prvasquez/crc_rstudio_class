@@ -146,9 +146,7 @@ read.csv(file, header = TRUE, sep = ",")
 ```
 * `File` The file you want to read from.
 * `header = TRUE` If you file has a header, then you can leave this variable as `TRUE`, however, if the file does not have a header then switch to `FALSE`
-* `sep = ","` What to look for to separate the data. If you remember from when we viewed the text file, our data was separated by commas! (Also `.csv` stands for **Comma** separated values). If, however, our data was in the **tab** separated values. We would put `sep = \t`.
-
-
+* `sep = ","` What to look for to separate the data. If you remember from when we viewed the text file, our data was separated by commas! (Also `.csv` stands for **Comma** separated values). If, however, our data was in the **tab** separated values format. We would put `sep = \t`.
 
 Now your data is saved as a dataframe in Rstudio
 
