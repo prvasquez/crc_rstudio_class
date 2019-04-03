@@ -136,3 +136,7 @@ A few things to notice about this file.
 * **The Commas** - You may have noticed the `.csv` extension at the end of our file. That stands for `Comma Separated Values`. Different types of files need to be imported into Rstudio in different ways. Another similar file type you may see is `.tsv`, which stands for `Tab Separated Values`. As you can imagine, instead of commas the values have a tab space between them.
 * **Saturday is HOT!** - It seems like Saturday will be a really hot day at 332 degree celcius! Keep this in mind for later and we can fix it with our newly learned R skills!
 
+### Opening Data files and storing them in Rstudio
+When we opened the `.csv` file all we saw was how the text inside the file. But what if we wanted to ask Rstudio what the temperature was on Wednesday? There is no command that would work on the `.csv` file, so instead we will first have to import the csv file as a table into our Rstudio enviornment.
+
+
