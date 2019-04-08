@@ -150,3 +150,17 @@ read.csv(file, header = TRUE, sep = ",")
 
 Now your data is saved as a dataframe in Rstudio
 
+### Checking data blocks
+### change the wrong data block
+### Operations on data(mean avg etc)
+### Adding a new row, w/ temperature function from before
+
+## Packages
+### installing, loading, etc
+### What types of packages (bioconductor)
+
+## Plotting
+### different types of plotting
+
+## Data sets
+### Do something with a new data set
