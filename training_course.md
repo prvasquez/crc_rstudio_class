@@ -155,6 +155,11 @@ Now your data is saved as a dataframe in Rstudio called `data`. You can view the
 ![alt text](https://github.com/prvasquez/crc_rstudio_class/blob/master/datatable.png)
 
 ### Checking data blocks
+
+Now that we have our data set up, we need to learn how to use R commands to access it.
+
+The most simple command is just typing in `data` into the console. Go ahead and try that. The console should return the data table but printed out. You can see there are 6 rows, each representing a day, and 2 coloumns, one for "day" and one for "temperature".
+
 ### change the wrong data block
 ### Operations on data(mean avg etc)
 ### Adding a new row, w/ temperature function from before
