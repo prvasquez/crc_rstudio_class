@@ -148,7 +148,11 @@ read.csv(file, header = TRUE, sep = ",")
 * `header = TRUE` If you file has a header, then you can leave this variable as `TRUE`, however, if the file does not have a header then switch to `FALSE`
 * `sep = ","` What to look for to separate the data. If you remember from when we viewed the text file, our data was separated by commas! (Also `.csv` stands for **Comma** separated values). If, however, our data was in the **tab** separated values format. We would put `sep = \t`.
 
-Now your data is saved as a dataframe in Rstudio
+`data <- read.csv("sample_data.csv")`
+
+Now your data is saved as a dataframe in Rstudio called `data`. You can view the data as a table with the `View()` command. You should see a data table that looks like this.
+
+![alt text](https://github.com/prvasquez/crc_rstudio_class/blob/master/datatable.png)
 
 ### Checking data blocks
 ### change the wrong data block
