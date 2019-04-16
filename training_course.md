@@ -210,7 +210,13 @@ How about `data[2,2]`?
 
 If you remember back to when we were checking out the dataset, we saw that Saturday's forcast was supposed to be 332 degrees! That is HOT! We need to change it down to something reasonable. To do that, first we have to find which command calls the table spot where we have the incorrect data.
 
-Go ahead and find that command.
+Go ahead and find what that command is.
+
+Once you have the command, go ahead and asign that block a new value that you think is what the temperature will be. To do that, you will have to run the command like this.
+```
+#command <- #temperature_you_want_to_input
+```
+
 ### Operations on data(mean avg etc)
 ### Adding a new row, w/ temperature function from before
 
