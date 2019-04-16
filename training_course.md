@@ -158,9 +158,59 @@ Now your data is saved as a dataframe in Rstudio called `data`. You can view the
 
 Now that we have our data set up, we need to learn how to use R commands to access it.
 
-The most simple command is just typing in `data` into the console. Go ahead and try that. The console should return the data table but printed out. You can see there are 6 rows, each representing a day, and 2 coloumns, one for "day" and one for "temperature".
+The most simple command is just typing in `data` into the console. Go ahead and try that. The console should return the data table but printed out. You can see there are 6 rows, each representing a day, and 2 coloumns, one for "day" and one for "temperature". You can also use `View(data)` which will bring up the table in the top left. **Note: The `View()` command has a capital V**
 
-### change the wrong data block
+#### Check the names of columns
+
+If you want to check what the names of columns are use the `colnames()` function.
+```
+colnames(data)
+[1] "Day"         "Temperature"
+```
+
+What if we wanted to see what the data was in a column? For that, we would have to call certain parts of our dataframe. The syntax for that is `data[column,row]`. If we leave the `row` variable blank, then we should get just columns.
+
+So to check the data in column 1...
+```
+> data[1]
+        Day
+1    Monday
+2   Tuesday
+3 Wednesday
+4  Thursday
+5    Friday
+6  Saturday
+```
+And then column 2...
+```
+> data[2]
+  Temperature
+1          30
+2          32
+3          28
+4          25
+5          31
+6         332
+```
+
+### Change the wrong data block
+
+Now that you know the syntax, you should be able to call certain boxes from the matrix. `data[1,1]` should give us the data in row 1 column 1 (which is Monday).
+
+```
+> data[1,1]
+[1] Monday
+6 Levels: Friday Monday ... Wednesday
+```
+How about `data[2,2]`?
+```
+> data[2,2]
+[1] 32
+```
+
+If you remember back to when we were checking out the dataset, we saw that Saturday's forcast was supposed to be 332 degrees! That is HOT! We need to change it down to something reasonable. To do that, first we have to find which command calls the table spot where we have the incorrect data.
+
+Go ahead and find that command.
 ### Operations on data(mean avg etc)
 ### Adding a new row, w/ temperature function from before
 
