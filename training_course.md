@@ -168,7 +168,7 @@ colnames(data)
 [1] "Day"         "Temperature"
 ```
 
-What if we wanted to see what the data was in a column? For that, we would have to call certain parts of our dataframe. The syntax for that is `data[column,row]`. If we leave the `row` variable blank, then we should get just columns.
+What if we wanted to see what the data was in a column? For that, we would have to call certain parts of our dataframe. The syntax for that is `data[row,column]`. However, if we just want to see what a column looks like we can just use `data[column_number]`.
 
 So to check the data in column 1...
 ```
@@ -217,6 +217,18 @@ Once you have the command, go ahead and asign that block a new value that you th
 #command <- #temperature_you_want_to_input
 data[6,2] <- 32
 ```
+
+Good job! Now Saturday won't be as hot! Now lets add some data in, add to the table so that there is a new day `Sunday` and make sunday be a cool `25` degrees. We can do that manually by assigning values to two new data boxes in the 7th row.
+
+```
+# For the day
+data[7,1] <- "Sunday"
+
+# For the temperature
+data[7,2] <- 25
+```
+
+Easy-peasy! But now imagine a data table that has thousands of boxes! Doing this one-by-one would take a very long time and have a high rate of error. We will learn how to add whole new rows/columns later on.
 
 ### Operations on data(mean avg etc)
 ### Adding a new row, w/ temperature function from before
