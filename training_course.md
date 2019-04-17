@@ -142,13 +142,14 @@ When we opened the `.csv` file all we saw was how the text inside the file. But 
 1. Manually import the data by going `File` -> `Import Dataset` -> `From Text (Base)...` then select the `sample_data.csv` file and click open then import! 
 2. In your console, you can use the `read.csv()` function. Let's run through this function's variables so we know what were doing.
 ```
-read.csv(file, header = TRUE, sep = ",")
+read.csv(file, header = TRUE, sep = ",", stringsAsFactors = )
 ```
 * `File` The file you want to read from.
 * `header = TRUE` If you file has a header, then you can leave this variable as `TRUE`, however, if the file does not have a header then switch to `FALSE`
 * `sep = ","` What to look for to separate the data. If you remember from when we viewed the text file, our data was separated by commas! (Also `.csv` stands for **Comma** separated values). If, however, our data was in the **tab** separated values format. We would put `sep = \t`.
+* `stringsAsFactors = ` This variable looks for either a `TRUE` or a `FALSE`. Don't worry about this one for now, we will discuss it later.
 
-`data <- read.csv("sample_data.csv")`
+`data <- read.csv("sample_data.csv", stringsAsFactors = FALSE)`
 
 Now your data is saved as a dataframe in Rstudio called `data`. You can view the data as a table with the `View()` command. You should see a data table that looks like this.
 
