@@ -215,6 +215,7 @@ Go ahead and find what that command is.
 Once you have the command, go ahead and asign that block a new value that you think is what the temperature will be. To do that, you will have to run the command like this.
 ```
 #command <- #temperature_you_want_to_input
+data[6,2] <- 32
 ```
 
 ### Operations on data(mean avg etc)
