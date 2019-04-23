@@ -232,7 +232,27 @@ data[7,2] <- 25
 Easy-peasy! But now imagine a data table that has thousands of boxes! Doing this one-by-one would take a very long time and have a high rate of error. We will learn how to add whole new rows/columns later on.
 
 ### Operations on data(mean avg etc)
-### Adding a new row, w/ temperature function from before
+
+Lets say we want to find out what the average temperature will be across our whole dataset. One way we could do that is open the calulator app on our phone, go down the list adding up all the temperatures, and then divide by how many rows we added. Now imagine a dataset with 1000+ rows... that might get a bit tidious. Thankfully, Rstudio was designed to handle large datasets and the base package comes prepared with a whole suite of mathmatical functions we can perform.
+
+One thing to keep in mind is that when performing functions, we can only perform them on **numeric** objects. So we would not be able to ask what the mean of `Monday + Tuesday + Wednesday...` is but instead we have to ask what the mean of `30 + 32 + 28 + 25...` is. The function for `mean()` is as follows.
+```
+mean(x)
+```
+Where x is a vector of numbers. But how do we get a vector of numbers from out dataset? Well we know that we need the `Temperature` column from our dataset `data`. To call specific columns of a dataset the syntax is `dataset$(name_of_column)`. So if we wanted to see all the days in the day column we would run the command...
+```
+> data$Day
+[1] "Monday"    "Tuesday"  
+[3] "Wednesday" "Thursday" 
+[5] "Friday"    "Saturday" 
+[7] "Sunday"
+```
+
+So now that you know what the function for mean is and you know how to call columns from a dataset, go ahead and **find what the mean temperature will be.**
+
+### Adding a new column, w/ temperature function from before
+
+
 
 ## Packages
 ### installing, loading, etc
