@@ -104,6 +104,41 @@ Great job! You just wrote a function to change temperature from fahrenheit to ce
 
 Now go ahead and **write a new function** that accepts an argument of temperature in **Celcius** and **outputs fahrenheit**.
 
+### For loops
+
+What would happen if you needed to run your temperature conversion function on 100 different temperature values? Well you could 1) type out each value into the function like so.
+```
+FtoC(1)
+FtoC(2)
+FtoC(3)
+FtoC(4)
+# and so on
+```
+**Or** you could iterate through all the numbers with one command! A **For loop**. Lets go over the basic structure of a for loop.
+
+```
+for (i in x){
+        statement
+}
+```
+**X** is a range of numbers or how many times you want to do the looping and what `i` will be equal to. For example, if you wanted to iterate through the numbers 1 through 10, you could do `for (i in c(1,2,3,4,5,6,7,8,9,10))`. But that seems like a lot of work if you wanted to do 1 through 100... so R has a built in function to make this easy, the colon `:`. So if you want to say 1 through 10 you would do `1:10` and if you wanted to do 5 through 15 you would do `5:15`.
+
+**Statement** the statement portion of the for loop is what you want to do on every iteration, it must include the `i`.
+
+### Practice with For loops
+
+One useful function is the `sum()` command, which sums the numbers inside of it. So, `sum(1,2)` would equal 3(You can try this if you would like). However, lets say you forgot how to use the `sum()` command! This is an example of a for loop that you could run to take the sum of the numbers 1 through 100.
+
+```
+total = 0 # Start by assigning the total to 0
+for(i in 1:100){ #iterate i from 1 to 100
+        total = total + i # add i to the total
+}
+print(total) # print out the total
+```
+
+
+
 ## Working with data
 Today, one of the biggest challenges that researchers, companies, and other organizations face is the sheer amount of data available to them. Rstudio allows us to take large amounts of data and visualize it. For this next section, we will be working with a sample data set I created. 
 
@@ -252,7 +287,7 @@ So now that you know what the function for mean is and you know how to call colu
 
 ### Adding a new column, w/ temperature function from before
 
-
+Now we are going to bring everything together and add a new column onto our data table
 
 ## Packages
 ### installing, loading, etc
