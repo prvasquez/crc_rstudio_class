@@ -289,11 +289,36 @@ So now that you know what the function for mean is and you know how to call colu
 
 ### Adding a new column, w/ temperature function from before
 
-Now we are going to bring everything together and add a new column onto our data table
+Now we are going to bring everything together and add a new column onto our data table that is the temperature in Fahrenheit!
+
+* **HINT** Use a For Loop!
 
 ## Packages
+
+The base language of R is expansive and has a lot of tools. However, R by itself cannot do everything you could want! In response to that, developers can independently make add-ons or **PACKAGES** which complement the language and allow the user to do more things! For example, the base R package has a `plot` command. However, it only makes a very simple graph. Go ahead and try.
+```
+plot(data$Temperature)
+```
+But what if we wanted to make box plots or other types of advanced plots... well we would have to use a package!
+
 ### installing, loading, etc
+
+There are some packages that are already installed that come with Rstudio! To checkout these packages, click the `packages` option in the bottom right box of Rstudio. You can scroll through and check them out (there's a lot)! Because these packages are already *installed* all we have to do is **Load** them.
+
+Lets go ahead and load the `maps` package. You can do that by calling the `library()` function.
+
+```
+library(maps)
+```
+Now that we have the maps library loaded, lets call it and see what we can do with this package!
+```
+map('county','indiana', fill = TRUE, col = palette())
+```
+If you want to see whatelse you can do with a package, you can checkout the documentation by adding a `?` before the name of the library like so `?map`
+
 ### What types of packages (bioconductor)
+In addition to the many packages that already come with R, there are many on the internet that you can download and use for yourself.
+
 
 ## Plotting
 ### different types of plotting
