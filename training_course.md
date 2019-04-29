@@ -316,12 +316,7 @@ map('county','indiana', fill = TRUE, col = palette())
 ```
 If you want to see whatelse you can do with a package, you can checkout the documentation by adding a `?` before the name of the library like so `?map`
 
-### What types of packages (bioconductor)
-In addition to the many packages that already come with R, there are many on the internet that you can download and use for yourself.
+### Different types of packages
+In addition to the many packages that already come with R, there are many on the internet that you can download and use for yourself. As a bio major, one large repository of packages are found at https://www.bioconductor.org/ which has many different packages for processes like annotating transcripts and differential gene expression!
 
-
-## Plotting
-### different types of plotting
-
-## Data sets
-### Do something with a new data set
+There are many other websites that offer packages for other types of data manipulation, and if you are curious you can always google `r package xyz`.
