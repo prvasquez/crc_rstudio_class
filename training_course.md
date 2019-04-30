@@ -256,15 +256,7 @@ Once you have the command, go ahead and asign that block a new value that you th
 data[6,2] <- 32
 ```
 
-Good job! Now Saturday won't be as hot! Now lets add some data in, add to the table so that there is a new day `Sunday` and make sunday be a cool `25` degrees. We can do that manually by assigning values to two new data boxes in the 7th row.
-
-```
-# For the day
-data[7,1] <- "Sunday"
-
-# For the temperature
-data[7,2] <- 25
-```
+Good job! Now Saturday won't be as hot! Now lets add some data in, **add to the table** so that there is a new day `Sunday` and make sunday be a cool `25` degrees. 
 
 Easy-peasy! But now imagine a data table that has thousands of boxes! Doing this one-by-one would take a very long time and have a high rate of error. We will learn how to add whole new rows/columns later on.
 
