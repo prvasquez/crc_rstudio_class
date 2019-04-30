@@ -70,10 +70,10 @@ Functions are the backbone of using Rstudio efficiently. A function is a command
 Some other functions you may want to play around with
 * `sqrt(49)`
 * `abs(-7)`
-* `log10(x)`
+* `q <- log10(x)`
 
 ### Creating Functions
-Let's say you want to go to Europe this summer, however, Europe measures their temperature in Celcius and we measure our temperature in Fahrenheit. There is a conversion to get from fahrenheit to celsius the equation is `(F - 32)\*(5/9) = C`. So if we started at a nice 70 degree fahrenheit and wanted to get to celsius we could use our console and go
+Let's say you want to go to Europe this summer, however, Europe measures their temperature in Celcius and we measure our temperature in Fahrenheit. There is a conversion to get from fahrenheit to celsius the equation is `(F - 32)\(5/9) = C`. So if we started at a nice 70 degree fahrenheit and wanted to get to celsius we could use our console and go
 * `(70 - 32) * (5/9)`
 But that's a lot of typing to find a simple conversion. So instead of having to manually type out the formula every time, we can create a function similar to `sum()` or `sqrt()` to do this quickly.
 
