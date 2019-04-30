@@ -137,8 +137,29 @@ for(i in 1:100){ #iterate i from 1 to 100
 print(total) # print out the total
 ```
 
+### Conditionals
 
+Another useful tool in coding is conditional statements, these are statements that only happen **if** a condition is met. The basic structure of an **if** command is as follows.
+```
+if(condition){
+        statement
+}else{
+        statement
+}
+```
+* The condition can be something like `if(x > 100)`
+* Notice that **else** does not have a condition, this is because the statement following else will happen if the `if` condition is not met
 
+What do you think the output of this conditional will be?
+```
+x = 10
+if(x > 10){
+        print("Bye World!")
+}else{
+        print("Hello World!")
+}
+```
+Now that you have a better understanding of for loops and conditionals, **write code** that creates two variables `even` and `odd` and then iterates from 1 to 100, but if the number is even if gets added to `even` and if the number is odd it gets added to `odd`. Then print out what even and odd are!
 
 
 ## Working with data
